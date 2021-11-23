@@ -1,9 +1,3 @@
-from pathlib import Path
-import torch
-from torch import optim
-import torch.nn as nn
-import torch.nn.functional as F
-
 import typer
 
 from ser.train import my_train
