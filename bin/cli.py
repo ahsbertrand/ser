@@ -1,8 +1,4 @@
 import typer
-<<<<<<< Updated upstream
-
-from ser.train import my_train
-=======
 import torch
 import git
 import json
@@ -14,7 +10,6 @@ from ser.params import Params, save_params
 from ser.transforms import transforms, normalize
 from ser.infer import run_inference
 from ser.utils import generate_ascii_art
->>>>>>> Stashed changes
 
 main = typer.Typer()
 
@@ -38,10 +33,6 @@ def train(
 
 
 @main.command()
-<<<<<<< Updated upstream
-def infer():
-    print("This is where the inference code will go")
-=======
 def infer(
     run_path: Path
 ):
@@ -74,4 +65,3 @@ def infer(
     
     print(f"Predicted number is   : {pred}")
     print(f"Prediction confidence : {certainty}")
->>>>>>> Stashed changes
